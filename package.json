@@ -2,14 +2,14 @@
     "name": "tronweb",
     "version": "5.1.0",
     "description": "JavaScript SDK that encapsulates the TRON HTTP API",
-    "main": "dist/TronWeb.node.js",
+    "main": "src/index.js",
     "keywords": [
         "TRON",
         "tronweb"
     ],
     "scripts": {
         "prepare": "npm run build",
-        "build": "npm run clean && webpack --config webpack.config.js --progress --color",
+        "build": "npm run clean",
         "build:dev": "NODE_ENV=development npm run build",
         "clean": "rimraf dist",
         "newaccount": "node scripts/test-node.js && node test/helpers/newAccounts 100",
